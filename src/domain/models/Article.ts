@@ -1,5 +1,5 @@
 import type { UUID } from 'crypto';
-import type { Categorie } from './Categorie';
+import type { Categorie } from '@/domain/models/Categorie';
 
 export default interface Article {
     id: UUID;
