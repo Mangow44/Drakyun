@@ -4,9 +4,7 @@ import DrakyunMarquee from '@/primary/components/marquee/DrakyunMarquee.vue';
 
 <template>
     <main>
-        <drakyun-marquee
-            :content="'nouveautés nouveautés nouveautés nouveautés nouveautés nouveautés nouveautés nouveautés nouveautés nouveautés nouveautés nouveautés nouveautés nouveautés nouveautés&#160;'"
-        />
+        <drakyun-marquee :content="'nouveautés nouveautés nouveautés nouveautés&#160;'" />
     </main>
 </template>
 
