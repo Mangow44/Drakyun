@@ -1,7 +1,17 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import DrakyunMarquee from '@/primary/components/marquee/DrakyunMarquee.vue';
+</script>
 
 <template>
     <main>
-        <h1>Homeview</h1>
+        <drakyun-marquee
+            :content="'nouveautés nouveautés nouveautés nouveautés nouveautés nouveautés nouveautés nouveautés nouveautés nouveautés nouveautés nouveautés nouveautés nouveautés nouveautés&#160;'"
+        />
     </main>
 </template>
+
+<style scoped>
+.marquee-container {
+    margin-top: auto;
+}
+</style>
