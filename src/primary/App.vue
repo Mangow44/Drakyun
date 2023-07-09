@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router';
+import DrakyunHeader from '@/primary/components/header/DrakyunHeader.vue';
 </script>
 
 <template>
-    <header>
-        <h1>Header</h1>
-    </header>
-
+    <drakyun-header />
     <RouterView />
 </template>
