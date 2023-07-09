@@ -7,6 +7,7 @@ export default interface ArticleDto {
     price: number;
     image: string;
     description?: string;
+    size?: string;
     quantity: number;
     type: CategorieDto;
 }

@@ -10,6 +10,7 @@ export default class ArticlesMapper implements ModelMapper<Article, ArticleDto> 
             price: dto.price,
             image: dto.image,
             description: dto.description,
+            size: dto.size,
             quantity: dto.quantity,
             type: dto.type,
         };
@@ -21,6 +22,7 @@ export default class ArticlesMapper implements ModelMapper<Article, ArticleDto> 
             price: entity.price,
             image: entity.image,
             description: entity.description,
+            size: entity.size,
             quantity: entity.quantity,
             type: entity.type,
         };

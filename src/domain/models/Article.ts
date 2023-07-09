@@ -7,6 +7,7 @@ export default interface Article {
     price: number;
     image: string;
     description?: string;
+    size?: string;
     quantity: number;
     type: Categorie;
 }

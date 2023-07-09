@@ -11,6 +11,7 @@ describe('Articles mapper', () => {
         price: 1,
         image: 'article.png',
         description: 'description',
+        size: '6,3 x 6,3 cm',
         quantity: 1,
         type: 'STICKER',
     };
@@ -20,6 +21,7 @@ describe('Articles mapper', () => {
         price: 1,
         image: 'article.png',
         description: 'description',
+        size: '6,3 x 6,3 cm',
         quantity: 1,
         type: 'STICKER',
     };
