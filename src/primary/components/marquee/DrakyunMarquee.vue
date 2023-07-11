@@ -1,16 +1,15 @@
 <script setup lang="ts">
-// TODO : device low perf = disable marquee
-// TODO : add space after content (&#160;)
-// TODO : passer la vitesse en props
-
 defineProps<{
     content: string;
+    duration: string;
 }>();
 </script>
 
 <template>
     <div class="marquee-container">
-        <div class="marquee" :style="{ '--after-content': `'${content}'` }">{{ content }}</div>
+        <div class="marquee" :style="{ '--after-content': `'${content}'`, '--marquee-duration': `${duration}` }">
+            {{ content }}
+        </div>
     </div>
 </template>
 
@@ -28,7 +27,8 @@ defineProps<{
 }
 
 .marquee {
-    animation: honrizontal-scroll 5s linear infinite;
+    animation: honrizontal-scroll linear infinite;
+    animation-duration: var(--marquee-duration);
 }
 
 .marquee,
@@ -49,6 +49,12 @@ defineProps<{
     }
     100% {
         transform: translateX(-50%);
+    }
+}
+
+@media (prefers-reduced-motion) {
+    .marquee {
+        animation: none;
     }
 }
 </style>
