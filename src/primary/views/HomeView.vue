@@ -1,10 +1,13 @@
 <script setup lang="ts">
+import NewArticles from '@/primary/components/news/NewArticles.vue';
 import DrakyunMarquee from '@/primary/components/marquee/DrakyunMarquee.vue';
 </script>
 
 <template>
     <main>
         <section id="news">
+            <new-articles />
+
             <drakyun-marquee
                 :content="'nouveautés&#160;&#160;&#160;&#160;&#160;&#160;nouveautés&#160;&#160;&#160;&#160;&#160;&#160;nouveautés&#160;&#160;&#160;&#160;&#160;&#160;nouveautés&#160;&#160;&#160;&#160;&#160;&#160;\
                 nouveautés&#160;&#160;&#160;&#160;&#160;&#160;nouveautés&#160;&#160;&#160;&#160;&#160;&#160;nouveautés&#160;&#160;&#160;&#160;&#160;&#160;nouveautés&#160;&#160;&#160;&#160;&#160;&#160;\
